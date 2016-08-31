@@ -2,6 +2,7 @@ package com.srcclr;
 
 import org.apache.commons.fileupload.MultipartStream;
 import org.apache.xml.security.signature.XMLSignatureInput;
+import org.elasticsearch.percolator.PercolatorService;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.io.ByteArrayInputStream;
@@ -16,6 +17,9 @@ public class Main {
     BCrypt.checkpw(candidate, hashed);
 
     filterXMLSignature();
+
+    PercolatorService s = new PercolatorService(null, null, null, null, null, null, null, null, null, null);
+    s.close();
   }
 
   private static void filterXMLSignature() {
