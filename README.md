@@ -1,6 +1,6 @@
 # [:] Example Maven Project
 
-An example maven project to demonstrate [srcclr](https://www.srcclr.com) scans.
+This is Updated by Pritesh An example maven project to demonstrate [srcclr](https://www.srcclr.com) scans.
 
 ## Try me!
 
